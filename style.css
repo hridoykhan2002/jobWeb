@@ -1,0 +1,164 @@
+/****************** starup ****************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out .3s;
+}
+:root{
+    
+}
+/***************** basic *****************/
+body{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body li{
+    list-style: none;
+}
+body h1{
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 45px;
+}
+body h3{
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 25px;
+}
+body a{
+    text-decoration: none;
+}
+body p{
+    letter-spacing: .5px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    padding: 100px 80px;
+}
+.section-header{
+    margin-bottom: 50px;
+}
+.section-header p{
+    margin-top: 20px;
+}
+/* header */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.295);
+}
+nav img{
+    width: 70px;
+}
+nav p{
+    font-size: 35px;
+}
+nav i{
+    color: #075e54;
+    padding: 5px;
+}
+/* main */
+main{
+    min-height: 100vh;
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+main form{
+    padding: 50px 200px;
+}
+main h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0;
+}
+main input{
+    padding: 15px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid blue;
+    border-radius: 2rem;
+    margin-bottom: 30px;
+}
+main p{
+    margin-bottom: 10px;
+}
+main input{
+    width: 100%;
+}
+.name{
+    width: 100%;
+}
+.nameArticle article{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+}
+.nameArticle article input{
+    width: 100%;
+}
+.addressArticle{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 1%;
+    align-items: end;
+}
+main button{
+    padding: 15px;
+    width: 100%;
+    display: block;
+    background-color: rgb(52, 52, 231);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+/* media */
+@media (max-width: 990px) {
+    main form {
+        padding: 50px;
+    }
+}
+@media (max-width: 599px) {
+    main form {
+        padding: 20px;
+    }
+    nav img {
+        width: 70px;
+    }
+    nav p {
+        font-size: 25px;
+    }
+    nav p i{
+        padding: 5px;
+    }
+    nav {
+        padding: 10px 20px;
+    }
+    .nameArticle article {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2%;
+    }
+    .addressArticle {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1%;
+        align-items: end;
+    }
+    main h1{
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0;
+    }
+}
